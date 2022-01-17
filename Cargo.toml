@@ -1,6 +1,6 @@
 [package]
 name = "space_invaders"
-version = "0.1.8"
+version = "0.2.0"
 authors = ["Swastik Acharyya <arpangreat@github.com"]
 edition = "2021"
 
