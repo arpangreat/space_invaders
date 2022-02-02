@@ -1,0 +1,58 @@
+rust.vim Global Variables:
+
+let g:ftplugin_rust_source_path = v:null
+let g:loaded_syntastic_rust_cargo_checker = v:null
+let g:loaded_syntastic_rust_filetype = v:null
+let g:loaded_syntastic_rust_rustc_checker = v:null
+let g:rust_bang_comment_leader = v:null
+let g:rust_cargo_avoid_whole_workspace = v:null
+let g:rust_clip_command = v:null
+let g:rust_conceal = v:null
+let g:rust_conceal_mod_path = v:null
+let g:rust_conceal_pub = v:null
+let g:rust_fold = v:null
+let g:rust_last_args = v:null
+let b:rust_last_args = []
+let g:rust_last_rustc_args = v:null
+let b:rust_last_rustc_args = []
+let g:rust_original_delimitMate_excluded_regions = v:null
+let g:rust_playpen_url = v:null
+let g:rust_prev_delimitMate_quotes = v:null
+let g:rust_recent_nearest_cargo_tol = v:null
+let g:rust_recent_root_cargo_toml = v:null
+let g:rust_recommended_style = v:null
+let g:rust_set_conceallevel = v:null
+let g:rust_set_conceallevel=1 = v:null
+let g:rust_set_foldmethod = v:null
+let g:rust_set_foldmethod=1 = v:null
+let g:rust_shortener_url = v:null
+let g:rustc_makeprg_no_percent = v:null
+let g:rustc_path = v:null
+let g:rustfmt_autosave = 1
+let g:rustfmt_autosave_if_config_present = v:null
+let g:rustfmt_command = 'rustfmt'
+let g:rustfmt_emit_files = 1
+let g:rustfmt_fail_silently = 0
+let g:rustfmt_options = ''
+let g:syntastic_extra_filetypes = ['rust']
+let g:syntastic_rust_cargo_fname = v:null
+rustfmt 1.4.38-nightly (c84f39e 2022-03-20)
+
+rustc 1.61.0-nightly (c84f39e6c 2022-03-20)
+
+cargo 1.61.0-nightly (109bfbd 2022-03-17)
+
+
+NVIM v0.7.0-dev+1294-g0c02e8a62
+Build type: RelWithDebInfo
+LuaJIT 2.1.0-beta3
+Compilation: /usr/bin/cc -DNVIM_TS_HAS_SET_MATCH_LIMIT -DNVIM_TS_HAS_SET_ALLOCATOR -O2 -g -Og -g -Wall -Wextra -pedantic -Wno-unused-parameter -Wstrict-prototypes -std=gnu99 -Wshadow -Wconversion -Wmissing-prototypes -Wimplicit-fallthrough -Wvla -fstack-protector-strong -fno-common -fdiagnostics-color=always -DINCLUDE_GENERATED_DECLARATIONS -D_GNU_SOURCE -DNVIM_MSGPACK_HAS_FLOAT32 -DNVIM_UNIBI_HAS_VAR_FROM -DMIN_LOG_LEVEL=3 -I/home/arpangreat/neovim/build/config -I/home/arpangreat/neovim/src -I/home/arpangreat/neovim/.deps/usr/include -I/usr/include -I/home/arpangreat/neovim/build/src/nvim/auto -I/home/arpangreat/neovim/build/include
+Compiled by arpangreat@arpangreat
+
+Features: +acl +iconv +tui
+See ":help feature-compile"
+
+   system vimrc file: "$VIM/sysinit.vim"
+  fall-back for $VIM: "/usr/local/share/nvim"
+
+Run :checkhealth for more info
