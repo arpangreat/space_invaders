@@ -1,8 +1,7 @@
+use rusty_time::timer::Timer;
 use std::cmp::max;
 use std::time::Duration;
 use std::usize;
-
-use rusty_time::timer::Timer;
 
 use crate::frame::{Drawable, Frame};
 use crate::{NUM_COLS, NUM_ROWS};
