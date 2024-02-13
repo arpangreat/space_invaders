@@ -23,7 +23,7 @@ fn main() -> Result<(), Box<dyn Error>> {
     audio.add("win", "win.wav");
     audio.play("startup");
 
-    // Terminal
+    // Terminal Window
     let mut stdout = io::stdout();
     terminal::enable_raw_mode()?;
     stdout.execute(EnterAlternateScreen)?;
