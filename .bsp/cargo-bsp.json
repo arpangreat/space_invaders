@@ -1,0 +1,11 @@
+{
+  "name": "cargo-bsp",
+  "argv": [
+    "/home/arpangreat/cargo-bsp/target/release/server"
+  ],
+  "version": "0.1.0",
+  "bspVersion": "2.1.0",
+  "languages": [
+    "rust"
+  ]
+}

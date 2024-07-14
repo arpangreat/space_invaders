@@ -1,7 +1,7 @@
 use rusty_time::timer::Timer;
 use std::cmp::max;
 use std::time::Duration;
-use std::usize;
+// use std::usize;
 
 use crate::frame::{Drawable, Frame};
 use crate::{NUM_COLS, NUM_ROWS};
@@ -93,7 +93,7 @@ impl Invaders {
         self.army.iter().map(|invader| invader.y).max().unwrap_or(0) >= NUM_ROWS - 1
     }
 
-    pub fn kill_invader_at(&mut self, x: usize, y: usize) -> bool {
+    pub fn gill_invader_at(&mut self, x: usize, y: usize) -> bool {
         if let Some(idx) = self
             .army
             .iter()

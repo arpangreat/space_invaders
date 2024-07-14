@@ -1,17 +1,18 @@
+use std::{io, thread};
 use std::error::Error;
 use std::sync::mpsc;
 use std::time::{Duration, Instant};
-use std::{io, thread};
 
+use crossterm::{event, ExecutableCommand, terminal};
 use crossterm::cursor::{Hide, Show};
 use crossterm::event::Event;
 use crossterm::terminal::{EnterAlternateScreen, LeaveAlternateScreen};
-use crossterm::{event, terminal, ExecutableCommand};
 use rusty_audio::Audio;
-use space_invaders::frame::{new_frame, Drawable};
+
+use space_invaders::frame::{Drawable, new_frame};
 use space_invaders::invaders::Invaders;
 use space_invaders::player::Player;
-use space_invaders::{frame, render};
+use space_invaders::render;
 
 fn main() -> Result<(), Box<dyn Error>> {
     let mut audio = Audio::new();
@@ -32,7 +33,7 @@ fn main() -> Result<(), Box<dyn Error>> {
     // Render loop in a separet thread
     let (render_tx, render_rx) = mpsc::channel();
     let render_handle = thread::spawn(move || {
-        let mut last_frame = frame::new_frame();
+        let mut last_frame = new_frame();
         let mut stdout = io::stdout();
         render::render(&mut stdout, &last_frame, &last_frame, true);
         fun_name();
