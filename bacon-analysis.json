@@ -1,0 +1,26 @@
+{
+  "analyzer": "standard",
+  "result": "report",
+  "lines": [
+    {
+      "line": {
+        "content": {
+          "strings": [
+            {
+              "csi": "\u001b[1m\u001b[32m",
+              "raw": "    Finished"
+            },
+            {
+              "csi": "",
+              "raw": " `dev` profile [unoptimized + debuginfo] target(s) in 0.11s"
+            }
+          ]
+        },
+        "origin": "StdErr"
+      },
+      "analysis": {
+        "line_type": "Normal"
+      }
+    }
+  ]
+}

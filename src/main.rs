@@ -1,12 +1,12 @@
-use std::{io, thread};
 use std::error::Error;
 use std::sync::mpsc;
 use std::time::{Duration, Instant};
+use std::{io, thread};
 
-use crossterm::{event, ExecutableCommand, terminal};
 use crossterm::cursor::{Hide, Show};
 use crossterm::event::Event;
 use crossterm::terminal::{EnterAlternateScreen, LeaveAlternateScreen};
+use crossterm::{ExecutableCommand, event, terminal};
 use rusty_audio::Audio;
 
 use space_invaders::frame::{Drawable, new_frame};
@@ -68,6 +68,7 @@ fn main() -> Result<(), Box<dyn Error>> {
                             audio.play("pew");
                         }
                     }
+
                     event::KeyCode::Esc | event::KeyCode::Char('q') => {
                         audio.play("lose");
                         break 'gameloop;
@@ -115,7 +116,6 @@ fn main() -> Result<(), Box<dyn Error>> {
     stdout.execute(Show)?;
     stdout.execute(LeaveAlternateScreen)?;
     terminal::disable_raw_mode()?;
-
     Ok(())
 }
 

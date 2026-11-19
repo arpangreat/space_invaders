@@ -1,0 +1,32 @@
+{
+  "lines": [],
+  "stats": {
+    "warnings": 0,
+    "errors": 0,
+    "test_fails": 0,
+    "passed_tests": 0,
+    "location_lines": 0,
+    "normal_lines": 0
+  },
+  "suggest_backtrace": false,
+  "output": {
+    "lines": [
+      {
+        "content": {
+          "strings": [
+            {
+              "csi": "\u001b[1m\u001b[32m",
+              "raw": "    Finished"
+            },
+            {
+              "csi": "",
+              "raw": " `dev` profile [unoptimized + debuginfo] target(s) in 0.11s"
+            }
+          ]
+        },
+        "origin": "StdErr"
+      }
+    ]
+  },
+  "failure_keys": []
+}
